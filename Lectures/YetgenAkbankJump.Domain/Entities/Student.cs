@@ -2,7 +2,7 @@
 
 namespace YetgenAkbankJump.Domain.Entities
 {
-    public class Student : EntityBase<Guid>
+    public class Student:EntityBase<Guid>
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

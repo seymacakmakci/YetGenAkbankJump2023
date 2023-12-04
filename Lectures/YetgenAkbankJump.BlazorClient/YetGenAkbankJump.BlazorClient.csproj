@@ -21,4 +21,7 @@
     <ProjectReference Include="..\YetgenAkbankJump.Domain\YetgenAkbankJump.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\.editorconfig" />
+  </ItemGroup>
 </Project>
