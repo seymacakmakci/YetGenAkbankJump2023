@@ -1,4 +1,4 @@
-﻿/*using YetgenAkbankJump.Domain.Entities;
+﻿using YetgenAkbankJump.Domain.Entities;
 
 namespace YetgenAkbankJump.Domain.Identity
 {
@@ -10,4 +10,4 @@ namespace YetgenAkbankJump.Domain.Identity
         public Int16 TimeZone { get; set; }
         public string LanguageCode { get; set; }
     }
-}*/
+}

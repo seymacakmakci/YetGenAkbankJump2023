@@ -1,4 +1,4 @@
-﻿/*using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using YetgenAkbankJump.Domain.Entities;
 using YetgenAkbankJump.Domain.Enums;
 
@@ -19,4 +19,4 @@ namespace YetgenAkbankJump.Domain.Identity
         public string? ModifiedByUserId { get; set; }
         public DateTimeOffset? LastModifiedOn { get; set; }
     }
-} */
+}
