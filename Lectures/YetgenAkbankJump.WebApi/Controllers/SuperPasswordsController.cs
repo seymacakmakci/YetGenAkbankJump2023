@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using YetgenAkbankJump.OOPConsole.Utility;
 using YetgenAkbankJump.Shared.Utility;
-using YetGenAkbankJump.Shared.Utilities;
+using YetgenAkbankJump.Shared.Utility;
 
-namespace YetGenAkbankJump.WebApi.Controllers
+namespace YetgenAkbankJump.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

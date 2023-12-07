@@ -1,4 +1,9 @@
-﻿using YetgenAkbankJump.Domain.Enums;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using YetgenAkbankJump.Domain.Enums;
 
 namespace YetgenAkbankJump.Domain.Entities
 {

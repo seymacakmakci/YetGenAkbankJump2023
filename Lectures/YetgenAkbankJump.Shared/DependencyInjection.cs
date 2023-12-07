@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
-using YetGenAkbankJump.Shared.Utilities;
+using YetgenAkbankJump.Shared.Utility;
 
-namespace YetGenAkbankJump.Shared
+namespace YetgenAkbankJump.Shared
 {
     public static class DependencyInjection
     {

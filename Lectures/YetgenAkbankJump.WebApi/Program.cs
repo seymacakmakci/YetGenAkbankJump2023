@@ -1,15 +1,16 @@
 using Microsoft.AspNetCore.Localization;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
+using Microsoft.Extensions.DependencyInjection;
 using System.Globalization;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
-using YetgenAkbankJump.Persistence.Contexts;
-using YetgenAkbankJump.Persistence.Utilities;
-using YetgenAkbankJump.Shared;
-using YetgenAkbankJump.Shared.Services;
-using YetgenAkbankJump.Shared.Utilities;
 using YetgenAkbankJump.WebApi.Services;
+using YetgenAkbankJump.Shared.Utility;
+using YetgenAkbankJump.Shared.Services;
+using YetgenAkbankJump.Shared;
+using YetgenAkbankJump.Persistence.Contexts;
+using YetgenAkbankJump.OOPConsole.Utility;
+using YetGenAkbankJump.Shared.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,7 +29,7 @@ builder.Services.AddSingleton<PasswordGenerator>();
 
 builder.Services.AddSingleton<RequestCountService>(new RequestCountService());
 
-builder.Services.AddScoped<ExcelManager>();
+//builder.Services.AddScoped<ExcelManager>();
 
 builder.Services.AddScoped<FakeDataService>();
 

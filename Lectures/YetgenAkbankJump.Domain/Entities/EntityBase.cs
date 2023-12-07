@@ -1,4 +1,10 @@
-﻿namespace YetgenAkbankJump.Domain.Entities
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace YetgenAkbankJump.Domain.Entities
 {
     public abstract class EntityBase<TKey> : IEntityBase<TKey>, ICreatedByEntity, IModifiedByEntity, IDeletedByEntity
     {

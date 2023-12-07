@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using YetgenAkbankJump.Shared.Services;
+using YetGenAkbankJump.Shared.Services;
 
 namespace YetgenAkbankJump.OOPConsole.Utility
 {
     public class PasswordGenerator
     {
+        private readonly ITextService _textService;
+        private readonly IIPService _ipService;
+
+
+        private string _lastIp = string.Empty;
+
         public int GeneratedPasswordsCount { get; set; } = 0;
 
 
@@ -18,9 +26,11 @@ namespace YetgenAkbankJump.OOPConsole.Utility
         private const string lowerCaseChars = "abcdefghijklmnopqrstuvwxyz";
         private const string upperCaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        public PasswordGenerator()
+        public PasswordGenerator(ITextService textService, IIPService ipService)
         {
             _random = new Random();
+            _textService = textService;
+            _ipService = ipService;
         }
 
         public string Generate(int passwordLength, bool includeNumbers, bool includeLowerCase, bool includeUpperCase, bool specialChars)
@@ -30,7 +40,7 @@ namespace YetgenAkbankJump.OOPConsole.Utility
             if (includeNumbers)
                 charsBuilder.Append(Numbers);
 
-            if(includeLowerCase)
+            if (includeLowerCase)
                 charsBuilder.Append(lowerCaseChars);
 
 
@@ -50,12 +60,18 @@ namespace YetgenAkbankJump.OOPConsole.Utility
                 var randomIndex = _random.Next(0, acceptedChars.Length);
 
                 passwordBuilder.Append(acceptedChars[randomIndex]);
-                
+
             }
 
             GeneratedPasswordsCount++;
 
-            return passwordBuilder.ToString();
+            var password = passwordBuilder.ToString();
+
+            _lastIp = _ipService.Ip;
+
+            _textService.Save(password);
+
+            return password;
         }
 
     }

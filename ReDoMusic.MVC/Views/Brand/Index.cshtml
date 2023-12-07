@@ -15,12 +15,7 @@
         <tbody>
             @foreach (var brand in Model)
             {
-                <tr>
-                    <td>@brand.Name</td>
-                    <td>@brand.DisplayText</td>
-                    <td>@brand.Address</td>
-                    <td><a asp-action="DeleteBrand" asp-route-id="@brand.Id" class="btn btn-outline-danger">Delete</a></td>
-                </tr>
+             
             }
         </tbody>
     </table>

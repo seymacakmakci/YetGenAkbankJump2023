@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace YetGenAkbankJump.Shared.Services
+namespace YetgenAkbankJump.Shared.Services
 {
     public interface IIPService
     {

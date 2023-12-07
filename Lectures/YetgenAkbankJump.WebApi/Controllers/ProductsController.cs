@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿/*using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using YetgenAkbankJump.Domain.Dtos;
 using YetgenAkbankJump.Domain.Entities;
-using YetGenAkbankJump.Persistence.Contexts;
+using YetgenAkbankJump.Persistence.Contexts;
 
-namespace YetGenAkbankJump.WebApi.Controllers
+namespace YetgenAkbankJump.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -119,4 +119,4 @@ namespace YetGenAkbankJump.WebApi.Controllers
         }
 
     }
-}
+} */

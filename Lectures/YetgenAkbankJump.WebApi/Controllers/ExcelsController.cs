@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using YetgenAkbankJump.Domain.Dtos;
-using YetGenAkbankJump.Persistence.Utilities;
+//using YetGenAkbankJump.Persistence.Utilities;
 
 namespace YetGenAkbankJump.WebApi.Controllers
 {

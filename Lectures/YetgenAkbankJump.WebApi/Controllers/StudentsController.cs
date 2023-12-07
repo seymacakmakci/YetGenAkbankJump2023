@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using YetgenAkbankJump.Domain.Entities;
-using YetGenAkbankJump.Persistence.Contexts;
-using YetGenAkbankJump.WebApi.Services;
+using YetgenAkbankJump.Persistence.Contexts;
+using YetgenAkbankJump.WebApi.Services;
 
-namespace YetGenAkbankJump.WebApi.Controllers
+namespace YetgenAkbankJump.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -62,4 +62,4 @@ namespace YetGenAkbankJump.WebApi.Controllers
             return Ok(students);
         }
     }
-}
+}*/

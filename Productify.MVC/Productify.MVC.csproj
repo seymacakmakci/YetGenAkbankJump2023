@@ -16,4 +16,16 @@
     <Folder Include="Controllers\" />
     <Folder Include="Views\Product\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Productify.Domain\Productify.Domain.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Productify.Persistance\Productify.Persistance.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
+  </ItemGroup>
 </Project>

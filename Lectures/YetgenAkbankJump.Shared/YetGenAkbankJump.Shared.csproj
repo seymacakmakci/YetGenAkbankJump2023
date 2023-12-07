@@ -25,4 +25,8 @@
   <ItemGroup>
     <Folder Include="Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YetgenAkbankJump.Domain\YetgenAkbankJump.Domain.csproj" />
+    <ProjectReference Include="..\YetgenAkbankJump.BlazorClient\YetgenAkbankJump.BlazorClient.csproj" />
+  </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿/*using Microsoft.AspNetCore.Identity;
 
 namespace YetgenAkbankJump.Domain.Identity
 {
@@ -6,3 +6,4 @@ namespace YetgenAkbankJump.Domain.Identity
     {
     }
 }
+*/

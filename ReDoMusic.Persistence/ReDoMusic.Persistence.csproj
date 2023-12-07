@@ -22,4 +22,8 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ReDoMusic.Domain\ReDoMusic.Domain.csproj" />
+    <ProjectReference Include="..\ReDoMusic.MVC\ReDoMusic.MVC.csproj" />
+  </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 ﻿
 using YetgenAkbankJump.OOPConsole.Utility;
 
-var passwordGenerator = new PasswordGenerator();
+/*var passwordGenerator = new PasswordGenerator();
 
 Console.WriteLine("Lütfen şifreniz için istediğiniz karakter sayısını giriniz");
 
@@ -28,6 +28,6 @@ var password = passwordGenerator.Generate(passwordLength,includeNumbers,includeL
 
 Console.WriteLine($"Şifreniz : {password}");
 
-Console.ReadLine();
+Console.ReadLine();*/
 
 return 1;
