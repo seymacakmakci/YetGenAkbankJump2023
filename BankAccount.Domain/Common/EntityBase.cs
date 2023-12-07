@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace BankAccount.Domain.Common
 {
     public class EntityBase<TKey> : ICreatedByEntity, IModifiedByEntity
